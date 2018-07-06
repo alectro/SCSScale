@@ -1,0 +1,138 @@
+$MinorSecond:         1.067;
+$MajorSecond:         1.125;
+$MinorThird:          1.200;
+$MajorThird:          1.250;
+$PerfectFourth:       1.3334;
+$AugmentedFourth:     1.414;
+$PerfectFifth:        1.500;
+$GoldenRatio:         1.618;
+$MajorSixth:          1.667;
+$MinorSeventh:        1.778;
+$MajorSeventh:        1.875;
+$Octave:              2.000;
+$MajorTenth:          2.500;
+$MajorEleventh:       2.667;
+$MajorTwelfth:        3.000;
+
+////  Desktop
+//    Setup
+$body:                16px;
+$ratio:               $PerfectFourth;
+$lineHeight:		      $MajorThird;
+
+//    Calculation
+$h6:                  ceil($body);
+$h5:                  ceil($h6*$ratio);
+$h4:                  ceil($h5*$ratio);
+$h3:                  ceil($h4*$ratio);
+$h2:                  ceil($h3*$ratio);
+$h1:                  ceil($h2*$ratio);
+
+$caption:             ceil($body/$ratio) - 2;
+$button:              ceil($body/$ratio);
+$blockquote:          $h5;
+$label:               $body - 2;
+
+//    Line Height
+
+
+$lh-p:                $body*$lineHeight;
+$lh-caption:			    $caption*$lineHeight;
+$lh-button:				    $button*$lineHeight;
+$lh-blockquote:		    $blockquote*$lineHeight;
+$lh-label:            $label*$lineHeight;
+$lh-h1:					      $h1*$lineHeight;
+$lh-h2:					      $h2*$lineHeight;
+$lh-h3:				        $h3*$lineHeight;
+$lh-h4:					      $h4*$lineHeight;
+$lh-h5:					      $h5*$lineHeight;
+$lh-h6:					      $h6*$lineHeight;
+
+
+////  Mobile
+//    Setup
+$mbody:               14px;
+$mratio:              $MinorThird;
+
+//    Calculation
+$mh6:                 ceil($mbody);
+$mh5:                 ceil($mh6*$mratio);
+$mh4:                 ceil($mh5*$mratio);
+$mh3:                 ceil($mh4*$mratio);
+$mh2:                 ceil($mh3*$mratio);
+$mh1:                 ceil($mh2*$mratio);
+
+
+
+$mcaption:            ceil($mbody/$mratio) - 2;
+$mbutton:             ceil($mbody/$mratio);
+$mblockquote:         $mh5;
+$mlabel:              $mbody - 2;
+
+
+
+
+
+
+////  Responsive
+//    Breakpoints
+
+$break-mobile:        375px;
+$break-desktop:       376px;
+
+//    Calculation
+@media screen and (max-width: $break-mobile) {
+  h6 {  font-size:    $mh6;
+        line-height:  $lh-h6; }
+  h5 {  font-size:    $mh5;
+        line-height:  $lh-h5; }
+  h4 {  font-size:    $mh4;
+        line-height:  $lh-h4; }
+  h3 {  font-size:    $mh3;
+        line-height:  $lh-h3; }
+  h2 {  font-size:    $mh2;
+        line-height:  $lh-h2; }
+  h1 {  font-size:    $mh1;
+        line-height:  $lh-h1; }
+  caption {
+        font-size:    $mcaption;
+        line-height:  $lh-caption;
+  }
+  blockquote {
+        font-size:    $mblockquote;
+        line-height:  $lh-blockquote;
+  }
+  button {
+        font-size:    $mbutton;
+        line-height:  $lh-button;
+  }
+  label {
+        font-size:    $mlabel;
+        line-height:  $lh-label;
+  }
+}
+@media screen and (min-width: $break-desktop) {
+  h6 {  font-size:    $h6;  }
+  h5 {  font-size:    $h5;  }
+  h4 {  font-size:    $h4;  }
+  h3 {  font-size:    $h3;  }
+  h2 {  font-size:    $h2;  }
+  h1 {  font-size:    $h1;  }
+  caption {
+    font-size:        $caption;
+  }
+  blockquote {
+    font-size:        $blockquote;
+  }
+  button {
+    font-size:        $button;
+  }
+  label {
+    font-size:        $label;
+  }
+}
+
+body {
+      font-family:    sans-serif;
+      line-height:    $lineHeight;
+}
