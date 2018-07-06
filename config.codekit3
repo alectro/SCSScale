@@ -9,21 +9,21 @@
 	],
 "creatorBuild": "26680",
 "files": {
-	"\/css\/scale.css": {
+	"\/play\/css\/scale.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/scale-min.css",
+		"oAP": "\/play\/css\/scale-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/index.html": {
+	"\/play\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/index.html",
+		"oAP": "\/play\/index.html",
 		"oF": 0
 		},
 	"\/scale.scss": {
@@ -34,7 +34,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/scale.css",
+		"oAP": "\/play\/css\/scale.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
