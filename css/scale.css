@@ -1,80 +1,57 @@
 @media screen and (max-width: 375px) {
   h6 {
     font-size: 14px;
-    line-height: 20px;
-  }
+    line-height: 20px; }
   h5 {
     font-size: 17px;
-    line-height: 27.5px;
-  }
+    line-height: 27.5px; }
   h4 {
     font-size: 21px;
-    line-height: 37.5px;
-  }
+    line-height: 37.5px; }
   h3 {
     font-size: 26px;
-    line-height: 51.25px;
-  }
+    line-height: 51.25px; }
   h2 {
     font-size: 32px;
-    line-height: 68.75px;
-  }
+    line-height: 68.75px; }
   h1 {
     font-size: 39px;
-    line-height: 92.5px;
-  }
+    line-height: 92.5px; }
   caption {
     font-size: 10px;
-    line-height: 12.5px;
-  }
+    line-height: 12.5px; }
   blockquote {
     font-size: 17px;
-    line-height: 27.5px;
-  }
+    line-height: 27.5px; }
   button {
     font-size: 12px;
-    line-height: 15px;
-  }
+    line-height: 15px; }
   label {
     font-size: 12px;
-    line-height: 17.5px;
-  }
-}
+    line-height: 17.5px; } }
 
 @media screen and (min-width: 376px) {
   h6 {
-    font-size: 16px;
-  }
+    font-size: 16px; }
   h5 {
-    font-size: 22px;
-  }
+    font-size: 22px; }
   h4 {
-    font-size: 30px;
-  }
+    font-size: 30px; }
   h3 {
-    font-size: 41px;
-  }
+    font-size: 41px; }
   h2 {
-    font-size: 55px;
-  }
+    font-size: 55px; }
   h1 {
-    font-size: 74px;
-  }
+    font-size: 74px; }
   caption {
-    font-size: 10px;
-  }
+    font-size: 10px; }
   blockquote {
-    font-size: 22px;
-  }
+    font-size: 22px; }
   button {
-    font-size: 12px;
-  }
+    font-size: 12px; }
   label {
-    font-size: 14px;
-  }
-}
+    font-size: 14px; } }
 
 body {
   font-family: sans-serif;
-  line-height: 1.25;
-}
+  line-height: 1.25; }
