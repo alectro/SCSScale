@@ -1,31 +1,31 @@
 @media screen and (max-width: 375px) {
   p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 18px;
   }
   h6 {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 18px;
   }
   h5 {
     font-size: 17px;
-    line-height: 26px;
+    line-height: 21px;
   }
   h4 {
     font-size: 20px;
-    line-height: 35px;
+    line-height: 25px;
   }
   h3 {
     font-size: 24px;
-    line-height: 46px;
+    line-height: 30px;
   }
   h2 {
     font-size: 29px;
-    line-height: 61px;
+    line-height: 36px;
   }
   h1 {
     font-size: 35px;
-    line-height: 81px;
+    line-height: 44px;
   }
 }
 
@@ -58,9 +58,4 @@
     font-size: 65px;
     line-height: 81px;
   }
-}
-
-body {
-  font-family: sans-serif;
-  line-height: 1.25;
 }

@@ -29,7 +29,6 @@ $h3:                  round($h4*$ratio);
 $h2:                  round($h3*$ratio);
 $h1:                  round($h2*$ratio);
 
-
 //    Line Height
 $lh-p:                round($body*$lineHeight);
 $lh-h1:               round($h1*$lineHeight);
@@ -44,6 +43,7 @@ $lh-h6:               round($h6*$lineHeight);
 //    Setup
 $mbody:               14px;
 $mratio:              $MinorThird;
+$mlineHeight:		      $MajorThird;
 
 //    Calculation
 $mp:                  round($mbody);
@@ -53,6 +53,15 @@ $mh4:                 round($mh5*$mratio);
 $mh3:                 round($mh4*$mratio);
 $mh2:                 round($mh3*$mratio);
 $mh1:                 round($mh2*$mratio);
+
+//    Line Height
+$mlh-p:                round($mbody*$mlineHeight);
+$mlh-h1:               round($mh1*$mlineHeight);
+$mlh-h2:               round($mh2*$mlineHeight);
+$mlh-h3:               round($mh3*$mlineHeight);
+$mlh-h4:               round($mh4*$mlineHeight);
+$mlh-h5:               round($mh5*$mlineHeight);
+$mlh-h6:               round($mh6*$mlineHeight);
 
 ////  Responsive
 //    Breakpoints
@@ -64,19 +73,19 @@ $break-desktop:       376px;
 @media screen and (max-width: $break-mobile) {
 
   p {  font-size:     $mp;
-        line-height:  $lh-p; }
+        line-height:  $mlh-p; }
   h6 {  font-size:    $mh6;
-        line-height:  $lh-h6; }
+        line-height:  $mlh-h6; }
   h5 {  font-size:    $mh5;
-        line-height:  $lh-h5; }
+        line-height:  $mlh-h5; }
   h4 {  font-size:    $mh4;
-        line-height:  $lh-h4; }
+        line-height:  $mlh-h4; }
   h3 {  font-size:    $mh3;
-        line-height:  $lh-h3; }
+        line-height:  $mlh-h3; }
   h2 {  font-size:    $mh2;
-        line-height:  $lh-h2; }
+        line-height:  $mlh-h2; }
   h1 {  font-size:    $mh1;
-        line-height:  $lh-h1; }
+        line-height:  $mlh-h1; }
 }
 @media screen and (min-width: $break-desktop) {
 
@@ -95,9 +104,4 @@ $break-desktop:       376px;
   h1 {  font-size:    $h1;
         line-height:  $lh-h1; }
 
-}
-
-body {
-      font-family:    sans-serif;
-      line-height:    $lineHeight;
 }
