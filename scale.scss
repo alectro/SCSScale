@@ -21,32 +21,23 @@ $ratio:               $PerfectFourth;
 $lineHeight:		      $MajorThird;
 
 //    Calculation
-$h6:                  ceil($body);
-$h5:                  ceil($h6*$ratio);
-$h4:                  ceil($h5*$ratio);
-$h3:                  ceil($h4*$ratio);
-$h2:                  ceil($h3*$ratio);
-$h1:                  ceil($h2*$ratio);
+$p:                   round($body);
+$h6:                  round($body);
+$h5:                  round($h6*$ratio);
+$h4:                  round($h5*$ratio);
+$h3:                  round($h4*$ratio);
+$h2:                  round($h3*$ratio);
+$h1:                  round($h2*$ratio);
 
-$caption:             ceil($body/$ratio) - 2;
-$button:              ceil($body/$ratio);
-$blockquote:          $h5;
-$label:               $body - 2;
 
 //    Line Height
-
-
-$lh-p:                $body*$lineHeight;
-$lh-caption:          $caption*$lineHeight;
-$lh-button:           $button*$lineHeight;
-$lh-blockquote:       $blockquote*$lineHeight;
-$lh-label:            $label*$lineHeight;
-$lh-h1:               $h1*$lineHeight;
-$lh-h2:               $h2*$lineHeight;
-$lh-h3:               $h3*$lineHeight;
-$lh-h4:               $h4*$lineHeight;
-$lh-h5:               $h5*$lineHeight;
-$lh-h6:               $h6*$lineHeight;
+$lh-p:                round($body*$lineHeight);
+$lh-h1:               round($h1*$lineHeight);
+$lh-h2:               round($h2*$lineHeight);
+$lh-h3:               round($h3*$lineHeight);
+$lh-h4:               round($h4*$lineHeight);
+$lh-h5:               round($h5*$lineHeight);
+$lh-h6:               round($h6*$lineHeight);
 
 
 ////  Mobile
@@ -55,24 +46,13 @@ $mbody:               14px;
 $mratio:              $MinorThird;
 
 //    Calculation
-$mh6:                 ceil($mbody);
-$mh5:                 ceil($mh6*$mratio);
-$mh4:                 ceil($mh5*$mratio);
-$mh3:                 ceil($mh4*$mratio);
-$mh2:                 ceil($mh3*$mratio);
-$mh1:                 ceil($mh2*$mratio);
-
-
-
-$mcaption:            ceil($mbody/$mratio) - 2;
-$mbutton:             ceil($mbody/$mratio);
-$mblockquote:         $mh5;
-$mlabel:              $mbody - 2;
-
-
-
-
-
+$mp:                  round($mbody);
+$mh6:                 round($mbody);
+$mh5:                 round($mh6*$mratio);
+$mh4:                 round($mh5*$mratio);
+$mh3:                 round($mh4*$mratio);
+$mh2:                 round($mh3*$mratio);
+$mh1:                 round($mh2*$mratio);
 
 ////  Responsive
 //    Breakpoints
@@ -82,6 +62,9 @@ $break-desktop:       376px;
 
 //    Calculation
 @media screen and (max-width: $break-mobile) {
+
+  p {  font-size:     $mp;
+        line-height:  $lh-p; }
   h6 {  font-size:    $mh6;
         line-height:  $lh-h6; }
   h5 {  font-size:    $mh5;
@@ -94,42 +77,24 @@ $break-desktop:       376px;
         line-height:  $lh-h2; }
   h1 {  font-size:    $mh1;
         line-height:  $lh-h1; }
-  caption {
-        font-size:    $mcaption;
-        line-height:  $lh-caption;
-  }
-  blockquote {
-        font-size:    $mblockquote;
-        line-height:  $lh-blockquote;
-  }
-  button {
-        font-size:    $mbutton;
-        line-height:  $lh-button;
-  }
-  label {
-        font-size:    $mlabel;
-        line-height:  $lh-label;
-  }
 }
 @media screen and (min-width: $break-desktop) {
-  h6 {  font-size:    $h6;  }
-  h5 {  font-size:    $h5;  }
-  h4 {  font-size:    $h4;  }
-  h3 {  font-size:    $h3;  }
-  h2 {  font-size:    $h2;  }
-  h1 {  font-size:    $h1;  }
-  caption {
-    font-size:        $caption;
-  }
-  blockquote {
-    font-size:        $blockquote;
-  }
-  button {
-    font-size:        $button;
-  }
-  label {
-    font-size:        $label;
-  }
+
+  p {  font-size:     $p;
+        line-height:  $lh-p; }
+  h6 {  font-size:    $h6;
+        line-height:  $lh-h6; }
+  h5 {  font-size:    $h5;
+        line-height:  $lh-h5; }
+  h4 {  font-size:    $h4;
+        line-height:  $lh-h4; }
+  h3 {  font-size:    $h3;
+        line-height:  $lh-h3; }
+  h2 {  font-size:    $h2;
+        line-height:  $lh-h2; }
+  h1 {  font-size:    $h1;
+        line-height:  $lh-h1; }
+
 }
 
 body {
