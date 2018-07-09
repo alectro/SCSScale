@@ -34,13 +34,13 @@ $mh2:                 round($mh3*$mratio);
 $mh1:                 round($mh2*$mratio);
 
 //    Line Height
-$mlh-p:                round($mbody*$mlineHeight);
-$mlh-h1:               round($mh1*$mlineHeight);
-$mlh-h2:               round($mh2*$mlineHeight);
-$mlh-h3:               round($mh3*$mlineHeight);
-$mlh-h4:               round($mh4*$mlineHeight);
-$mlh-h5:               round($mh5*$mlineHeight);
-$mlh-h6:               round($mh6*$mlineHeight);
+$mlh-p:               round($mbody*$mlineHeight);
+$mlh-h1:              round($mh1*$mlineHeight);
+$mlh-h2:              round($mh2*$mlineHeight);
+$mlh-h3:              round($mh3*$mlineHeight);
+$mlh-h4:              round($mh4*$mlineHeight);
+$mlh-h5:              round($mh5*$mlineHeight);
+$mlh-h6:              round($mh6*$mlineHeight);
 
 //    Calculation
 
