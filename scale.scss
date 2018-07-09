@@ -1,26 +1,9 @@
-$MinorSecond:         1.067;
-$MajorSecond:         1.125;
-$MinorThird:          1.200;
-$MajorThird:          1.250;
-$PerfectFourth:       1.3334;
-$AugmentedFourth:     1.414;
-$PerfectFifth:        1.500;
-$GoldenRatio:         1.618;
-$MajorSixth:          1.667;
-$MinorSeventh:        1.778;
-$MajorSeventh:        1.875;
-$Octave:              2.000;
-$MajorTenth:          2.500;
-$MajorEleventh:       2.667;
-$MajorTwelfth:        3.000;
+@import 'setup';
+@import 'mixins';
 
 ////  Desktop
-//    Setup
-$body:                16px;
-$ratio:               $PerfectFourth;
-$lineHeight:		      $MajorThird;
-
 //    Calculation
+
 $p:                   round($body);
 $h6:                  round($body);
 $h5:                  round($h6*$ratio);
@@ -40,12 +23,8 @@ $lh-h6:               round($h6*$lineHeight);
 
 
 ////  Mobile
-//    Setup
-$mbody:               14px;
-$mratio:              $MinorThird;
-$mlineHeight:		      $MajorThird;
-
 //    Calculation
+
 $mp:                  round($mbody);
 $mh6:                 round($mbody);
 $mh5:                 round($mh6*$mratio);
@@ -63,45 +42,39 @@ $mlh-h4:               round($mh4*$mlineHeight);
 $mlh-h5:               round($mh5*$mlineHeight);
 $mlh-h6:               round($mh6*$mlineHeight);
 
-////  Responsive
-//    Breakpoints
-
-$break-mobile:        375px;
-$break-desktop:       376px;
-
 //    Calculation
+
 @media screen and (max-width: $break-mobile) {
 
-  p {  font-size:     $mp;
-        line-height:  $mlh-p; }
-  h6 {  font-size:    $mh6;
-        line-height:  $mlh-h6; }
-  h5 {  font-size:    $mh5;
-        line-height:  $mlh-h5; }
-  h4 {  font-size:    $mh4;
-        line-height:  $mlh-h4; }
-  h3 {  font-size:    $mh3;
-        line-height:  $mlh-h3; }
-  h2 {  font-size:    $mh2;
-        line-height:  $mlh-h2; }
-  h1 {  font-size:    $mh1;
-        line-height:  $mlh-h1; }
+  p {   @include fontSize($mbody);
+        @include lineHeight($mlh-p); }
+  h6 {  @include fontSize($mh6);
+        @include lineHeight($mlh-h6); }
+  h5 {  @include fontSize($mh5);
+        @include lineHeight($mlh-h5); }
+  h4 {  @include fontSize($mh4);
+        @include lineHeight($mlh-h4); }
+  h3 {  @include fontSize($mh3);
+        @include lineHeight($mlh-h3); }
+  h2 {  @include fontSize($mh2);
+        @include lineHeight($mlh-h2); }
+  h1 {  @include fontSize($mh1);
+        @include lineHeight($mlh-h1); }
 }
 @media screen and (min-width: $break-desktop) {
 
-  p {  font-size:     $p;
-        line-height:  $lh-p; }
-  h6 {  font-size:    $h6;
-        line-height:  $lh-h6; }
-  h5 {  font-size:    $h5;
-        line-height:  $lh-h5; }
-  h4 {  font-size:    $h4;
-        line-height:  $lh-h4; }
-  h3 {  font-size:    $h3;
-        line-height:  $lh-h3; }
-  h2 {  font-size:    $h2;
-        line-height:  $lh-h2; }
-  h1 {  font-size:    $h1;
-        line-height:  $lh-h1; }
-
+  p {   @include fontSize($body);
+        @include lineHeight($lh-p); }
+  h6 {  @include fontSize($h6);
+        @include lineHeight($lh-h6); }
+  h5 {  @include fontSize($h5);
+        @include lineHeight($lh-h5); }
+  h4 {  @include fontSize($h4);
+        @include lineHeight($lh-h4); }
+  h3 {  @include fontSize($h3);
+        @include lineHeight($lh-h3); }
+  h2 {  @include fontSize($h2);
+        @include lineHeight($lh-h2); }
+  h1 {  @include fontSize($h1);
+        @include lineHeight($lh-h1); }
 }

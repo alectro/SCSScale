@@ -1,61 +1,101 @@
+/* Credit: https://gist.github.com/garystorey/5920051 */
 @media screen and (max-width: 375px) {
   p {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 15px;
+    line-height: 0.9375rem;
   }
+
   h6 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 15px;
+    line-height: 0.9375rem;
   }
+
   h5 {
-    font-size: 17px;
-    line-height: 21px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 18px;
+    line-height: 1.125rem;
   }
+
   h4 {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 21px;
+    line-height: 1.3125rem;
   }
+
   h3 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 25px;
+    line-height: 1.5625rem;
   }
+
   h2 {
-    font-size: 29px;
-    line-height: 36px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.875rem;
   }
+
   h1 {
-    font-size: 35px;
-    line-height: 44px;
+    font-size: 29px;
+    font-size: 1.8125rem;
+    line-height: 36px;
+    line-height: 2.25rem;
   }
 }
-
 @media screen and (min-width: 376px) {
   p {
     font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
+    line-height: 1.25rem;
   }
+
   h6 {
     font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
+    line-height: 1.25rem;
   }
+
   h5 {
     font-size: 21px;
+    font-size: 1.3125rem;
     line-height: 26px;
+    line-height: 1.625rem;
   }
+
   h4 {
     font-size: 28px;
+    font-size: 1.75rem;
     line-height: 35px;
+    line-height: 2.1875rem;
   }
+
   h3 {
     font-size: 37px;
+    font-size: 2.3125rem;
     line-height: 46px;
+    line-height: 2.875rem;
   }
+
   h2 {
     font-size: 49px;
+    font-size: 3.0625rem;
     line-height: 61px;
+    line-height: 3.8125rem;
   }
+
   h1 {
     font-size: 65px;
+    font-size: 4.0625rem;
     line-height: 81px;
+    line-height: 5.0625rem;
   }
 }

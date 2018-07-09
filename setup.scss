@@ -1,0 +1,31 @@
+////  Modular scale ratios
+$MinorSecond:         1.067;
+$MajorSecond:         1.125;
+$MinorThird:          1.2;
+$MajorThird:          1.25;
+$PerfectFourth:       1.3334;
+$AugmentedFourth:     1.414;
+$PerfectFifth:        1.5;
+$GoldenRatio:         1.618;
+$MajorSixth:          1.667;
+$MinorSeventh:        1.778;
+$MajorSeventh:        1.875;
+$Octave:              2;
+$MajorTenth:          2.5;
+$MajorEleventh:       2.667;
+$MajorTwelfth:        3;
+
+// body font-size in pixels for Desktops
+$body:                16px;
+$ratio:               $PerfectFourth;
+$lineHeight:		      $MajorThird;
+// body font-size in pixels for Mobiles
+$mbody:               12px;
+$mratio:              $MinorThird;
+$mlineHeight:		      $MajorThird;
+
+
+////    Breakpoints
+
+$break-mobile:        375px;
+$break-desktop:       376px;
