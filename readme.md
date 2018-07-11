@@ -8,7 +8,7 @@ Font-size calculated in rem with a fallback integer number in pixels and line-he
 3. Save and compile.
 
 **Credit**:
-[pxtorem.scss](https://gist.github.com/garystorey/5920051) by [@garystorey](https://github.com/garystorey)
+[oocss](https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss) by [@stubbornella](https://github.com/stubbornella)
 
 **Source**:
 [A modern scale for web typography](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
