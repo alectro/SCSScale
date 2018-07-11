@@ -4,10 +4,10 @@
 //Default font size on html element is 100%, equivalent to 16px;
   @return #{$remSize}rem;
 }
-@function calculateRem($lheight) {
-  $remSize: $lheight / 16px;
+@function calculateNum($lheight) {
+  $numSize: $lheight;
 //Default font size on html element is 100%, equivalent to 16px;
-  @return #{$remSize}rem;
+  @return #{$numSize};
 }
 
 // Mixin that will include the fall back px declaration as well as the calculated rem value.
@@ -16,6 +16,5 @@
   font-size: calculateRem($size);
 }
 @mixin lineHeight($lheight) {
-  line-height: $lheight;
-  line-height: calculateRem($lheight);
+  line-height: calculateNum($lheight);
 }

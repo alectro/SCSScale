@@ -2,44 +2,37 @@
   p {
     font-size: 12px;
     font-size: 0.75rem;
-    line-height: 15px;
-    line-height: 0.9375rem;
+    line-height: 1.5;
   }
   h6 {
     font-size: 12px;
     font-size: 0.75rem;
-    line-height: 15px;
-    line-height: 0.9375rem;
+    line-height: 1.5;
   }
   h5 {
     font-size: 14px;
     font-size: 0.875rem;
-    line-height: 18px;
-    line-height: 1.125rem;
+    line-height: 1.5;
   }
   h4 {
     font-size: 17px;
     font-size: 1.0625rem;
-    line-height: 21px;
-    line-height: 1.3125rem;
+    line-height: 1.5;
   }
   h3 {
     font-size: 20px;
     font-size: 1.25rem;
-    line-height: 25px;
-    line-height: 1.5625rem;
+    line-height: 1.5;
   }
   h2 {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 30px;
-    line-height: 1.875rem;
+    line-height: 1.5;
   }
   h1 {
     font-size: 29px;
     font-size: 1.8125rem;
-    line-height: 36px;
-    line-height: 2.25rem;
+    line-height: 1.5;
   }
 }
 
@@ -47,43 +40,36 @@
   p {
     font-size: 16px;
     font-size: 1rem;
-    line-height: 20px;
-    line-height: 1.25rem;
+    line-height: 1.25;
   }
   h6 {
     font-size: 16px;
     font-size: 1rem;
-    line-height: 20px;
-    line-height: 1.25rem;
+    line-height: 1.25;
   }
   h5 {
     font-size: 21px;
     font-size: 1.3125rem;
-    line-height: 26px;
-    line-height: 1.625rem;
+    line-height: 1.25;
   }
   h4 {
     font-size: 28px;
     font-size: 1.75rem;
-    line-height: 35px;
-    line-height: 2.1875rem;
+    line-height: 1.25;
   }
   h3 {
     font-size: 37px;
     font-size: 2.3125rem;
-    line-height: 46px;
-    line-height: 2.875rem;
+    line-height: 1.25;
   }
   h2 {
     font-size: 49px;
     font-size: 3.0625rem;
-    line-height: 61px;
-    line-height: 3.8125rem;
+    line-height: 1.25;
   }
   h1 {
     font-size: 65px;
     font-size: 4.0625rem;
-    line-height: 81px;
-    line-height: 5.0625rem;
+    line-height: 1.25;
   }
 }
